@@ -43,16 +43,34 @@
     box-shadow:  -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.1);
     background: transparent;
     font-size: 20px;
-    color: #fff;
+    color: #ecaaaa;
     cursor: pointer;
     margin: 10px;
+  }
+
+  form.display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+  }
+
+  form .display input{
+    width: 145px;
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+  }
+
+  form input.equal{
+    width: 145px;
   }
 </style>
 <body>
   <div class="container">
     <div class="calculator">
       <form>
-        <div>
+        <div class="display">
           <input type="text" name="display">
         </div>
         <div>
@@ -86,7 +104,7 @@
         <div>
           <input type="button" value="00">
           <input type="button" value="0">
-          <input type="button" value="=">
+          <input type="button" value="=" class="equal">
         </div>
       </form>
     </div>
